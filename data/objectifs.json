@@ -1,3 +1,9 @@
 [
-  "test"
+  "Afficher le temps total de la journ\u00e9e par cat\u00e9gorie (deep work, pause, etc.)",
+  "Afficher un tableau styl\u00e9 avec st.dataframe (noms, dur\u00e9es, horaires)",
+  "(Bonus) Ajouter filtrage par date (menu d\u00e9roulant : aujourd\u2019hui, hier, cette semaine\u2026)",
+  "\u2705 Cr\u00e9er la page \u201cDashboard\u201d dans app.py",
+  "\u2705 Afficher les objectifs de la semaine (r\u00e9sum\u00e9) : nombre faits / \u00e0 faire",
+  "\u2705 Afficher le total de temps travaill\u00e9 aujourd\u2019hui (deep work, admin\u2026)",
+  "(Bonus) Afficher des suggestions manuelles simples (ex : \u201cTu pourrais faire une pause\u201d si >90 min de deep work)"
 ]

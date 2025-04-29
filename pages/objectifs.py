@@ -10,6 +10,7 @@ DATA_FILE = DATA_DIR / "objectifs.json"
 # S'assurer que le dossier data existe
 DATA_DIR.mkdir(exist_ok=True)
 
+
 # Chargement des objectifs existants
 def load_objectifs():
     if not DATA_FILE.exists() or DATA_FILE.stat().st_size == 0:
@@ -31,6 +32,7 @@ def save_objectifs(objectifs):
     with open(DATA_FILE, "w") as f:
         json.dump(objectifs, f, indent=2)
 
+
 #  Afficher les objectifs
 def afficher_objectifs(objectifs):
     st.subheader("📋 Objectifs de la semaine")
@@ -38,12 +40,13 @@ def afficher_objectifs(objectifs):
         st.write("Aucun objectif défini.")
     else:
         for i, obj in enumerate(objectifs):
-            col1, col2 = st.columns([8,1])
+            col1, col2 = st.columns([8, 1])
             col1.write(f"- {obj}")
             if col2.button("❌", key=f"delete_{i}"):
                 objectifs.pop(i)
                 save_objectifs(objectifs)
-                st.experimental_rerun()
+                st.rerun()
+
 
 def main():
     st.title("🎯 Objectifs Hebdomadaires")
@@ -57,9 +60,10 @@ def main():
             objectifs.append(new_obj)
             save_objectifs(objectifs)
             st.success("Objectif ajouté avec succès")
-            st.experimental_rerun()
+            st.rerun()
 
     afficher_objectifs(objectifs)
+
 
 if __name__ == "__main__":
     main()

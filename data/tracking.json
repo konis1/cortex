@@ -1,0 +1,16 @@
+[
+  {
+    "nom": "test",
+    "categorie": "admin",
+    "debut": "2025-04-29T20:18:05.793959",
+    "fin": "2025-04-29T20:18:23.751762",
+    "duree_minutes": 0
+  },
+  {
+    "nom": "test",
+    "categorie": "Deep Work",
+    "debut": "2025-04-29T20:22:52.192663",
+    "fin": "2025-04-29T20:23:04.849039",
+    "duree_minutes": 0.21
+  }
+]
